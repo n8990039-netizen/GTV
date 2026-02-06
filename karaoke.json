@@ -1,0 +1,206 @@
+{
+  "name": "Караоке ТВ Ultimate Google TV Edition 2026",
+  "version": "9.1",
+  "parameter": "self",
+  "headline": "Караоке ТВ • Google TV Style",
+  "description": "Огромный портал караоке без регистрации. Прямые видео в одном плеере MSX. Поиск по каждому источнику отдельно. Rutube, VK, OK.ru, Yandex Video.",
+  "welcome": "none",
+  "background": "https://images.unsplash.com/photo-1511671782779-c97d3d27c1d4?auto=format&fit=crop&q=80&w=3840&h=2160",
+  "logo": "https://img.icons8.com/fluency/96/microphone.png",
+  "style": "tv",
+  "color": "#e0e0ff",
+  "background-color": "#0a0a1f",
+  "overlay": "gradient:#000000b0,#00000040",
+  "compress": true,
+  "dictionary": "https://msx.benzac.de/dictionary/ru.json",  // опционально русский перевод интерфейса MSX
+  "template": {
+    "type": "tile",
+    "style": "poster",
+    "poster": {
+      "width": "30%",
+      "height": "450",
+      "ratio": "16:9",
+      "effect": "scale 1.1 glow 0.8",
+      "shadow": true,
+      "border": "2px solid #ffffff33",
+      "radius": "12"
+    }
+  },
+  "rows": [
+    {
+      "type": "tiles",
+      "header": "Топ караоке прямо сейчас",
+      "style": "poster",
+      "tiles": [
+        {
+          "label": "Ветер с моря дул",
+          "subtitle": "Натали • Rutube • Текст на экране",
+          "image": "https://rutube.ru/api/thumbnail/video/ff92587e12e46224d98f2688f8d20a56/",
+          "action": "video:player:https://rutube.ru/video/ff92587e12e46224d98f2688f8d20a56/?autoplay=true&controls=true"
+        },
+        {
+          "label": "По барам",
+          "subtitle": "ANNA ASTI • Rutube • Хит 2026",
+          "image": "https://rutube.ru/api/thumbnail/video/6423be0b11b9b041a3111c0cf4ec78fe/",
+          "action": "video:player:https://rutube.ru/video/6423be0b11b9b041a3111c0cf4ec78fe/?autoplay=true"
+        },
+        {
+          "label": "Группа крови",
+          "subtitle": "Кино • VK • HD караоке",
+          "image": "https://i.mycdn.me/i?r=AzEPZsRbOZEKgBhR0XGMT1RczAAK8mOaK8dGu1g",
+          "action": "video:player:https://vk.com/video-134114976_456251286?hd=1"
+        },
+        {
+          "label": "Миллион алых роз",
+          "subtitle": "Алла Пугачёва • OK.ru • Классика",
+          "image": "https://ok.ru/videoembed/2089350728242",
+          "action": "video:player:https://ok.ru/video/2089350728242"
+        },
+        {
+          "label": "Shape of You",
+          "subtitle": "Ed Sheeran • Rutube • English",
+          "image": "https://rutube.ru/api/thumbnail/video/9c7e82d34b5e658a7e7575dadde330a7/",
+          "action": "video:player:https://rutube.ru/video/9c7e82d34b5e658a7e7575dadde330a7/?autoplay=true"
+        },
+        {
+          "label": "Despacito",
+          "subtitle": "Luis Fonsi • Rutube • Karaoke",
+          "image": "https://rutube.ru/api/thumbnail/video/126be484a34ca4944d31edad2175194d/",
+          "action": "video:player:https://rutube.ru/video/126be484a34ca4944d31edad2175194d/?autoplay=true"
+        },
+        {
+          "label": "Я сошла с ума",
+          "subtitle": "t.A.T.u. • Rutube",
+          "image": "https://rutube.ru/api/thumbnail/video/d9a5d50156fcdefaafa9b435064d8f76/",
+          "action": "video:player:https://rutube.ru/video/d9a5d50156fcdefaafa9b435064d8f76/?autoplay=true"
+        }
+      ]
+    },
+    {
+      "type": "tiles",
+      "header": "Поиск караоке по источникам",
+      "style": "default",
+      "tiles": [
+        {
+          "type": "tile",
+          "label": "Поиск в Rutube",
+          "subtitle": "Самый большой выбор русских караоке",
+          "icon": "https://rutube.ru/static/img/favicon.ico",
+          "action": "input:Введите песню или исполнителя|search:https://rutube.ru/search/?query={input}+караоке+текст"
+        },
+        {
+          "type": "tile",
+          "label": "Поиск в VK",
+          "subtitle": "Плейлисты и каналы с текстом",
+          "icon": "https://vk.com/images/icons/favicon.ico",
+          "action": "input:Введите запрос для VK|search:https://vk.com/video?q={input}+караоке"
+        },
+        {
+          "type": "tile",
+          "label": "Поиск в OK.ru",
+          "subtitle": "Много видео с наложенным текстом",
+          "icon": "https://ok.ru/static/img/favicon.ico",
+          "action": "input:Что ищем в OK?|search:https://ok.ru/video/search?st.query={input}+караоке+с+текстом"
+        },
+        {
+          "type": "tile",
+          "label": "Поиск в Yandex Видео",
+          "subtitle": "Агрегатор всех доступных видео",
+          "icon": "https://yandex.ru/images/touch/favicon/video-touch-192.png",
+          "action": "input:Поиск в Yandex Video|search:https://yandex.ru/video/search?text={input}+караоке+с+текстом"
+        }
+      ]
+    },
+    {
+      "type": "tiles",
+      "header": "Русские хиты 90-х и 2000-х",
+      "style": "poster",
+      "tiles": [
+        {
+          "label": "Я сошла с ума",
+          "subtitle": "t.A.T.u. • Rutube",
+          "image": "https://rutube.ru/api/thumbnail/video/d9a5d50156fcdefaafa9b435064d8f76/",
+          "action": "video:player:https://rutube.ru/video/d9a5d50156fcdefaafa9b435064d8f76/?autoplay=true"
+        },
+        {
+          "label": "Батарейка",
+          "subtitle": "Жуки • Rutube",
+          "image": "https://rutube.ru/api/thumbnail/video/f189f6262f61149eb20cba4be6295a6b/",
+          "action": "video:player:https://rutube.ru/video/f189f6262f61149eb20cba4be6295a6b/?autoplay=true"
+        },
+        {
+          "label": "Вахтёрам",
+          "subtitle": "Бумбокс • Rutube",
+          "image": "https://rutube.ru/api/thumbnail/video/ca4a9bd086c91dd61b0a94c8d7d969d9/",
+          "action": "video:player:https://rutube.ru/video/ca4a9bd086c91dd61b0a94c8d7d969d9/?autoplay=true"
+        },
+        {
+          "label": "Ветер с моря дул (альтернатива)",
+          "subtitle": "Натали • Rutube",
+          "image": "https://rutube.ru/api/thumbnail/video/b40390f16c11c780ec1e952ee743bd91/",
+          "action": "video:player:https://rutube.ru/video/b40390f16c11c780ec1e952ee743bd91/?autoplay=true"
+        }
+      ]
+    },
+    {
+      "type": "tiles",
+      "header": "Зарубежные хиты в караоке",
+      "style": "poster",
+      "tiles": [
+        {
+          "label": "Shape of You",
+          "subtitle": "Ed Sheeran • Rutube",
+          "image": "https://rutube.ru/api/thumbnail/video/9c7e82d34b5e658a7e7575dadde330a7/",
+          "action": "video:player:https://rutube.ru/video/9c7e82d34b5e658a7e7575dadde330a7/?autoplay=true"
+        },
+        {
+          "label": "Despacito",
+          "subtitle": "Luis Fonsi • Rutube",
+          "image": "https://rutube.ru/api/thumbnail/video/126be484a34ca4944d31edad2175194d/",
+          "action": "video:player:https://rutube.ru/video/126be484a34ca4944d31edad2175194d/?autoplay=true"
+        },
+        {
+          "label": "Shape of You (дуэт)",
+          "subtitle": "Ed Sheeran • Rutube",
+          "image": "https://rutube.ru/api/thumbnail/video/c2a387190f12cec1798bf04aa9976605/",
+          "action": "video:player:https://rutube.ru/video/c2a387190f12cec1798bf04aa9976605/?autoplay=true"
+        }
+      ]
+    },
+    {
+      "type": "space",
+      "label": " "
+    },
+    {
+      "type": "tiles",
+      "header": "Дополнительные быстрые ссылки",
+      "style": "default",
+      "tiles": [
+        {
+          "label": "Rutube — все караоке",
+          "subtitle": "Перейти к полному поиску",
+          "icon": "https://rutube.ru/static/img/favicon.ico",
+          "action": "page:https://rutube.ru/search/?query=караоке+текст"
+        },
+        {
+          "label": "VK — караоке плейлисты",
+          "subtitle": "Открыть VK видео",
+          "icon": "https://vk.com/images/icons/favicon.ico",
+          "action": "page:https://vk.com/video?q=караоке"
+        },
+        {
+          "label": "OK.ru — караоке видео",
+          "subtitle": "Открыть OK видео",
+          "icon": "https://ok.ru/static/img/favicon.ico",
+          "action": "page:https://ok.ru/video/search?st.query=караоке"
+        },
+        {
+          "label": "Yandex Видео — караоке",
+          "subtitle": "Поиск в Yandex",
+          "icon": "https://yandex.ru/images/touch/favicon/video-touch-192.png",
+          "action": "page:https://yandex.ru/video/search?text=караоке+с+текстом"
+        }
+      ]
+    }
+  ]
+        }
